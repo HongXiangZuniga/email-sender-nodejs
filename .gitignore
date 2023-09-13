@@ -1,0 +1,41 @@
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de registro y errores
+npm-debug.log
+yarn-error.log
+
+# Dependencias generadas automáticamente
+package-lock.json
+yarn.lock
+
+# Directorio de construcción
+build/
+
+# Entorno de desarrollo local (por ejemplo, editor)
+.env
+.vscode/
+.idea/
+
+# Archivos de configuración de editor
+*.sublime-project
+*.sublime-workspace
+*.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Directorio de pruebas
+__tests__/
+
+# Archivos de respaldo y temporales
+*.bak
+*.backup
+*.swp
+*~.nib/
+*~.swp
+*~
+.DS_Store
+Thumbs.db
