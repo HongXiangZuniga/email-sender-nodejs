@@ -21,11 +21,16 @@ class subscriberService {
         this.sqs =  new AWS.SQS();
         this.queueURL = queueURL;
         this.params = {
-            AttributeNames: ["SentTimestamp"],
+            AttributeNames: [
+                "SentTimestamp"
+            ],
             MaxNumberOfMessages: 10,
-            MessageAttributeNames: ["All"],
-            QueueUrl: this.queueURL,
+            MessageAttributeNames: [
+                "All"
+            ],
+            QueueUrl: "https://sqs.us-east-1.amazonaws.com/199211361050/email-sender",
             VisibilityTimeout: 20,
+            WaitTimeSeconds: 0
         };
     }
     async listen() {
