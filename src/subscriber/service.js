@@ -9,10 +9,12 @@ subscriberServiceInterface.awsConfig;
 subscriberServiceInterface.sqs;
 subscriberServiceInterface.queueURL;
 subscriberServiceInterface.params;
+subscriberServiceInterface.redisRepo;
 
 class subscriberService {
-    constructor(mailService, accessKeyId, secretAccessKey, region, queueURL) {
+    constructor(mailService,redisRepo, accessKeyId, secretAccessKey, region, queueURL) {
         this.mailService = mailService;
+        this.redisRepo = redisRepo;
         this.awsConfig = AWS.config.update({
             accessKeyId: accessKeyId,
             secretAccessKey: secretAccessKey,
@@ -38,7 +40,9 @@ class subscriberService {
             await delay(5000);
             console.debug("Search message")
             try {
-                await this.searchMessage();
+                var aux = await this.redisRepo.getHTML("123");
+                console.log(aux)
+                //await this.searchMessage();
             } catch (error) {
                 console.error(error);
             }
