@@ -1,4 +1,4 @@
-# Proyecto de Envío de Correos con Node.js 20 y Amazon SQS
+# Proyecto de Envío de Correos(NodeJS+SQS)
 
 Este proyecto es una aplicación de ejemplo que demuestra cómo enviar correos electrónicos utilizando Node.js 20 y Amazon Simple Queue Service (SQS). SQS se utiliza para encolar los correos electrónicos y luego se procesan de manera asíncrona en segundo plano.
 
