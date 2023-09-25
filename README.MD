@@ -37,6 +37,14 @@ Puedes configurar estas variables de entorno en un archivo `.env` en la raíz de
  ```bash
 npm start
 ```
+### message for queue
+ ```json
+    {
+        "subject": "subject",
+        "to":"to",
+        "key":"key"
+    }
+```
 
 ### Contribuir
 Si deseas contribuir a este proyecto, sigue estos pasos:

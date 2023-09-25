@@ -22,7 +22,7 @@ class emailService {
             from: this.from,
             to: to,
             subject: subject,
-            text: body,
+            html: body,
         };
         try {
             await new Promise((resolve, reject) => {
