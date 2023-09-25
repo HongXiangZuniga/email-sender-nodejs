@@ -1,7 +1,8 @@
 # Proyecto de Envío de Correos(NodeJS+SQS)
 
-Este proyecto es una aplicación de ejemplo que demuestra cómo enviar correos electrónicos utilizando Node.js 20 y Amazon Simple Queue Service (SQS). SQS se utiliza para encolar los correos electrónicos y luego se procesan de manera asíncrona en segundo plano.
+Este proyecto es una aplicación de ejemplo que demuestra cómo enviar correos electrónicos utilizando Node.js 20 y Amazon Simple Queue Service (SQS). SQS se utiliza para encolar los correos electrónicos y luego se procesan de manera asíncrona en segundo plano. Utilizando redis para almacenar los correos de forma temporal.
 
+![Arquitectura](diagram/arquitecture.png)
 ## Requisitos
 
 Asegúrate de tener instalado lo siguiente antes de ejecutar la aplicación:
@@ -22,14 +23,17 @@ Antes de ejecutar la aplicación, debes configurar las siguientes variables de e
 - `SMTP_PASSWORD`: Password de un smtp.
 - `SMTP_HOST`: Host del servidor smtp.
 - `MAIL_FROM`: Correo donde se envian.
-
+- `REDIS_HOST`: Host de redis
+- `REDIS_PASSWORD`: Password de Redis
+- `REDIS_USER`: User de redis
+- `REDIS_PORT`: Puerto del redis
 Puedes configurar estas variables de entorno en un archivo `.env` en la raíz del proyecto siguiendo el formato:
 
 
 ### Instalacion
  ```bash
- git clone https://github.com/tu-usuario/tu-proyecto.git
- cd tu-proyecto
+ git clone https://github.com/HongXiangZuniga/email-sender-nodejs
+ cd email-sender-nodejs
  npm install
 ```
 

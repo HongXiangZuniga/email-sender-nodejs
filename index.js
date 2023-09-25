@@ -5,8 +5,11 @@ const redisRepo = require("./src/persistence/redis/repository.js");
 
 async function main() {
   /*Init redisClient*/
+
+  const url = "redis://"+process.env.REDIS_USER+":"+process.env.REDIS_PASSWORD+"@"+process.env.REDIS_HOST+":"+process.env.REDIS_PORT
+
   const clientRedis = await redis.createClient({
-    url: "redis://default:rootdev@52.200.41.120:6379",
+    url: url,
   });
   clientRedis.on("error", (err) => console.log("Redis Client Error", err));
   clientRedis.connect();
