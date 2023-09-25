@@ -29,8 +29,8 @@ Puedes configurar estas variables de entorno en un archivo `.env` en la raíz de
 
 ### Instalacion
  ```bash
- git clone https://github.com/tu-usuario/tu-proyecto.git
- cd tu-proyecto
+ git clone https://github.com/HongXiangZuniga/email-sender-nodejs
+ cd email-sender-nodejs
  npm install
 ```
 
