@@ -30,16 +30,22 @@ Antes de ejecutar la aplicación, debes configurar las siguientes variables de e
 Puedes configurar estas variables de entorno en un archivo `.env` en la raíz del proyecto siguiendo el formato:
 
 
-### Instalacion
+### Install
  ```bash
  git clone https://github.com/HongXiangZuniga/email-sender-nodejs
  cd email-sender-nodejs
  npm install
 ```
 
-### uso
+### Run
  ```bash
-npm start
+npm start 
+```
+
+### Docker
+ ```bash
+make docker-build
+make docker-run
 ```
 ### message for queue
  ```json
