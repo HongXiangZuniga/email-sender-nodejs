@@ -21,7 +21,7 @@ async function main() {
     process.env.SMTP_PASSWORD,
     process.env.SMTP_HOST,
     process.env.MAIL_FROM,
-    587
+    25
   );
 
   /*Create Subscriber Service*/
