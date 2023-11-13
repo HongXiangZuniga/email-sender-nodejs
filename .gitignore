@@ -10,7 +10,6 @@ package-lock.json
 yarn.lock
 
 # Directorio de construcción
-build/
 
 # Entorno de desarrollo local (por ejemplo, editor)
 .env
