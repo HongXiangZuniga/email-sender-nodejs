@@ -33,7 +33,7 @@ class subscriberService {
       AttributeNames: ["SentTimestamp"],
       MaxNumberOfMessages: 10,
       MessageAttributeNames: ["All"],
-      QueueUrl: "https://sqs.us-east-1.amazonaws.com/199211361050/email-sender",
+      QueueUrl: this.queueURL,
       VisibilityTimeout: 20,
       WaitTimeSeconds: 0,
     };
